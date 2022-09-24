@@ -30,6 +30,10 @@ Route::get('/blank', function () {
     return view('blank');
 })->name('blank');
 
+Route::get('/konten', function () {
+    return view('konten');
+})->name('konten');
+
 Route::middleware('auth')->group(function() {
     Route::resource('basic', BasicController::class);
 });

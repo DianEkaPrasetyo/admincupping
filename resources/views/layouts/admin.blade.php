@@ -81,6 +81,14 @@
             </a>
         </li>
 
+        <!-- Nav Item - Konten -->
+        <li class="nav-item {{ Nav::isRoute('konten') }}">
+            <a class="nav-link" href="{{ route('konten') }}">
+                <i class="fas fa-fw fa-book"></i>
+                <span>{{ __('konten') }}</span>
+            </a>
+        </li>
+
         <!-- Nav Item -->
         <li class="nav-item {{ Nav::isRoute('blank') }}">
             <a class="nav-link" href="{{ route('blank') }}">
